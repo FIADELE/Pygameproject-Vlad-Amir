@@ -4,7 +4,7 @@ from math import pi as PI
 
 # Settings
 
-MAX_FPS = 60
+MAX_FPS = 30
 MIN_DT = 1.0 / MAX_FPS
 
 # Level IDs
