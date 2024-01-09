@@ -14,7 +14,7 @@ pygame.display.set_icon(icon)
 pygame.display.set_caption('Racing game for 2 players')
 
 level_loops = (level_0_loop, level_1_loop, level_2_loop, level_3_loop)
-current_level = 1
+current_level = 2
 
 while True:
     current_level = level_loops[current_level](screen)

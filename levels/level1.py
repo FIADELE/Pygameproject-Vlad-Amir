@@ -8,10 +8,10 @@ import math
 def level_1_loop(screen: Surface) -> LevelId:
     clock = pygame.time.Clock()
     shuttle_size = 100
-    shuttle_x = 900
-    shuttle_y = 220
+    shuttle_x = 870
+    shuttle_y = 225
     shuttle_speed = 10
-    shuttle_angle = 90
+    shuttle_angle = 0
     while True:
         clock.tick(MAX_FPS)
         screen.blit(bg1, (0, 0))
@@ -43,6 +43,8 @@ def level_1_loop(screen: Surface) -> LevelId:
             shuttle_x += shuttle_speed * math.cos(angle_radians)
             shuttle_y -= shuttle_speed * math.sin(angle_radians)
 
-        rotated_shuttle = pygame.transform.rotate(carTrack, shuttle_angle)
-        screen.blit(rotated_shuttle, (shuttle_x, shuttle_y))
+        rotated_image = pygame.transform.rotate(carTrack, shuttle_angle)
+        new_rect = rotated_image.get_rect(center=carDesert.get_rect(topleft=(shuttle_x, shuttle_y)).center)
+        screen.blit(rotated_image, new_rect)
+
         pygame.display.flip()
