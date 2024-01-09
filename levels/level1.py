@@ -43,8 +43,8 @@ def level_1_loop(screen: Surface) -> LevelId:
             shuttle_x += shuttle_speed * math.cos(angle_radians)
             shuttle_y -= shuttle_speed * math.sin(angle_radians)
 
-        rotated_image = pygame.transform.rotate(carTrack, shuttle_angle)
-        new_rect = rotated_image.get_rect(center=carDesert.get_rect(topleft=(shuttle_x, shuttle_y)).center)
+        rotated_image = pygame.transform.rotate(car_Track_red, shuttle_angle)
+        new_rect = rotated_image.get_rect(center=car_Track_red.get_rect(topleft=(shuttle_x, shuttle_y)).center)
         screen.blit(rotated_image, new_rect)
 
         pygame.display.flip()

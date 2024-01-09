@@ -22,9 +22,10 @@ bg1 = pygame.image.load('./pics/Track.png')
 bg1 = pygame.transform.scale(bg1, (1920, 960))
 
 bg2 = pygame.image.load('./pics/Desert.png')
-bg2 = pygame.transform.scale(bg2, (1920, 960))
-carTrack = pygame.image.load('pics/Car1_trackt.png')
-carDesert = pygame.image.load('pics/Car1_desert.png')
+car_Track_red = pygame.image.load('pics/Car1_track.png')
+car_Desert_red = pygame.image.load('pics/Car1_desert.png')
+car_Track_blue = pygame.image.load('pics/Car2_track.png')
+car_Desert_blue = pygame.image.load('pics/Car2_desert.png')
 
 # Colors
 

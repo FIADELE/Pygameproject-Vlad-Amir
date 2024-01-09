@@ -15,7 +15,7 @@ def level_2_loop(screen: Surface) -> LevelId:
 
     while True:
         clock.tick(MAX_FPS)
-        screen.blit(bg2, (0, 0))
+        screen.blit(bg2, ((WIDTH - 2560) / 2, (HEIGHT - 1280) / 2))
 
         for event in pygame.event.get():
             match event.type:
@@ -52,8 +52,8 @@ def level_2_loop(screen: Surface) -> LevelId:
         if 0.4 > shuttle_speed > -0.4:
             shuttle_speed = 0
 
-        rotated_image = pygame.transform.rotate(carDesert, shuttle_angle)
-        new_rect = rotated_image.get_rect(center=carDesert.get_rect(topleft=(shuttle_x, shuttle_y)).center)
+        rotated_image = pygame.transform.rotate(car_Desert_red, shuttle_angle)
+        new_rect = rotated_image.get_rect(center=car_Desert_red.get_rect(topleft=(shuttle_x, shuttle_y)).center)
         screen.blit(rotated_image, new_rect)
 
         pygame.display.flip()
