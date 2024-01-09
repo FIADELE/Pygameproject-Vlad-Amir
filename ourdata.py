@@ -15,6 +15,14 @@ LEVEL_1 = 1
 LEVEL_2 = 2
 LEVEL_3 = 3
 
+# Pictures
+
+bg1 = pygame.image.load('./pics/Track.png')
+bg1 = pygame.transform.scale(bg1, (1920, 960))
+
+bg2 = pygame.image.load('./pics/Desert.png')
+bg2 = pygame.transform.scale(bg2, (1920, 960))
+
 # Colors
 
 BLACK = Color(0, 0, 0)

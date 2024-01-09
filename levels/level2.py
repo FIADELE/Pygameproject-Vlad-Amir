@@ -8,7 +8,7 @@ def level_2_loop(screen: Surface) -> LevelId:
 
     while True:
         clock.tick(MAX_FPS)
-        screen.fill(BLACK)
+        screen.blit(bg2, (0, 0))
 
         for event in pygame.event.get():
             match event.type:
