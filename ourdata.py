@@ -4,8 +4,9 @@ from math import pi as PI
 
 # Settings
 
-MAX_FPS = 30
+MAX_FPS = 120
 MIN_DT = 1.0 / MAX_FPS
+WIDTH, HEIGHT = 1920, 960
 
 # Level IDs
 
@@ -22,6 +23,8 @@ bg1 = pygame.transform.scale(bg1, (1920, 960))
 
 bg2 = pygame.image.load('./pics/Desert.png')
 bg2 = pygame.transform.scale(bg2, (1920, 960))
+carTrack = pygame.image.load('pics/Car1_trackt.png')
+carDesert = pygame.image.load('pics/Car1_desert.png')
 
 # Colors
 
