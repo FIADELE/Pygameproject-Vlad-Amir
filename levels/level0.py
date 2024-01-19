@@ -58,8 +58,6 @@ def level_0_loop(screen: Surface) -> LevelId:
                         case pygame.K_2:
                             return LEVEL_2
 
-        pygame.display.flip()
-
 
 pygame.init()
 all_sprites = pygame.sprite.Group()
